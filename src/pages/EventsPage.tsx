@@ -1,8 +1,14 @@
+import { Container } from "@mui/material";
+
 
 export default function EventsPage() {
   return (
-    <div>
-      <h1>Hello Page</h1>
-    </div>
+    <Container
+      id='eventos'
+      maxWidth="lg"
+      sx={{ backgroundColor: "lightgreen", minHeight: "100vh" }}
+    >
+      <h1>Eventos</h1>
+    </Container>
   );
 }

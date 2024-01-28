@@ -1,7 +1,7 @@
 
 
 
-export const imgsHotel = 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404649/hotel-landing/hotel-marriott2_fbsu0x.jpg'
+export const imgHotel = 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404649/hotel-landing/hotel-marriott2_fbsu0x.jpg'
 
 export const offerRooms = [
   {

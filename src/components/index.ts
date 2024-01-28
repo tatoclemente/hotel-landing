@@ -6,6 +6,7 @@ export * from './Button'
 
 
 // Header components
+export * from './header/Header'
 export * from './header/Navigation'
 export * from './header/TitleCenter'
 

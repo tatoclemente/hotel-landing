@@ -1,7 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Jost:wght@600;700;800&display=swap');
 
 @font-face {
   font-family: "Mosk";
   src: url("/public/fonts/Mosk-Light-300.ttf");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#menu-item:hover {
+  transition: 0.7s ease;
+  text-decoration: underline
+  /* border-bottom: 2px solid white; */
 }

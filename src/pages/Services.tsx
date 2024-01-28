@@ -1,10 +1,13 @@
-
-
+import { Container } from "@mui/material";
 
 export default function ServicesPage() {
   return (
-    <div>
-      <h1>Hello Page</h1>
-    </div>
+    <Container
+      id='servicios'
+      maxWidth="lg"
+      sx={{ backgroundColor: "lightcoral", minHeight: "100vh" }}
+    >
+      <h1>Servicios</h1>
+    </Container>
   );
 }
