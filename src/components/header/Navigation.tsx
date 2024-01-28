@@ -1,16 +1,17 @@
+import { useEffect, useState } from 'react';
 
-import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, Button, Tooltip, MenuItem, ListItem } from '@mui/material';
+import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, Button, Tooltip, MenuItem, ListItem, colors } from '@mui/material';
 import AdbIcon from '@mui/icons-material/Adb';
 import MenuIcon from '@mui/icons-material/Menu';
-import { useEffect, useState } from 'react';
+
 import { useScrollColor } from '../../hooks/useScrollColor';
 
 
 const pages = [
   { title:'Home', route: 'home' }, 
-  {title: 'Menu', route: 'menu' }, 
-  {title: 'Eventos', route: 'eventos' }, 
-  {title: 'Servicios', route: 'servicios' },
+  { title: 'Menu', route: 'menu' }, 
+  { title: 'Eventos', route: 'eventos' }, 
+  { title: 'Servicios', route: 'servicios' },
 ];
 const settings = ['Perfil', 'Cuenta', 'Salir'];
 
@@ -18,7 +19,7 @@ export const Navigation = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
 
-  const [pathname, setPatname] = useState('/')
+  const [pathname, setPatname] = useState('home')
 
 
   const { navbarBackground } = useScrollColor()
@@ -37,6 +38,7 @@ export const Navigation = () => {
     
     setPatname(id)
     const section = document.getElementById(id);
+    
     
     section!.scrollIntoView({ behavior: 'smooth' });
   };
@@ -60,7 +62,8 @@ export const Navigation = () => {
         right: 0, 
         zIndex: 1000, 
         backgroundColor: navbarBackground,
-        transition: 'background-color 0.5s ease'
+        transition: 'background-color 0.5s ease',
+        width: '100vw',
       }}
     >
       <Container maxWidth="lg">
@@ -92,10 +95,10 @@ export const Navigation = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{color: '#fff'}} />
             </IconButton>
             <Menu
-              id="menu-appbar"
+              id="menu-app"
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
@@ -120,7 +123,7 @@ export const Navigation = () => {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: 'white' }} />
           <Typography
             variant="h5"
             noWrap
@@ -133,7 +136,7 @@ export const Navigation = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'white',
               textDecoration: 'none',
             }}
           >
@@ -152,9 +155,13 @@ export const Navigation = () => {
               justifyContent: 'center',
             }}>
               {pages.map((page) => (
-                <MenuItem
+                <Button
                   key={page.title}
-                  id='menu-item'
+                  data-value={page.route}
+                  style={pathname === page.route 
+                    ? {textDecoration: 'underline', textDecorationThickness: 2 } 
+                    : {}  
+                  }
                   onClick={() => handleClickMenu(page.route)}
                   sx={{ 
                     my: 2, 
@@ -168,7 +175,7 @@ export const Navigation = () => {
                   }}
                 >
                   {page.title}
-                </MenuItem>
+                </Button>
               ))}
 
             </ListItem>

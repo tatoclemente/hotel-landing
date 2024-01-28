@@ -5,9 +5,9 @@ import {
 
 import { imgHotel } from "../../utils/data"
 import { Navigation } from "./Navigation";
+import { TitleCenter } from "./TitleCenter";
 
 const ImageBackground = styled('img')({
-  position: 'relative',
   width: '100%',
   height: '376px',
   objectFit: 'cover',
@@ -29,10 +29,11 @@ const ImageBackdrop = styled('span')(({ theme }) => ({
 
 export const Header = () => {
   return (
-    <header>
+    <header style={{position: 'relative',  height: '376px',}}>
       <ImageBackground src={imgHotel} alt="hotel-ph" />
       <ImageBackdrop />
       <Navigation />
+      <TitleCenter />
     </header>
   )
 }
