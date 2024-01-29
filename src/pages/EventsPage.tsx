@@ -4,7 +4,7 @@ import { RoomSlideshow, SlideshowEvents } from "../components";
 import { offerRooms } from '../utils/data';
 
 import { events } from '../utils/data'
-import { GridCards } from '../components/body/services/GridCards';
+
 
 
 export default function EventsPage() {

@@ -15,13 +15,14 @@ interface Props {
 
 export const ServicesCard = ({ img, name }: Props) => {
   return (
-    <Card sx={{ width: 170, height: 270, borderRadius: '15px', boxShadow: '0 5px 5px rgba(0,0,0,.2)' }}>
+    <Card sx={{ width: 160, height: 270, borderRadius: '15px', boxShadow: 'none' }}>
       <CardActionArea>
         <CardMedia
           component="img"
           sx={{
             padding: '10px',
             borderRadius: '50%',
+            boxShadow: '0 5px 5px rgba(0,0,0,.2)'
           }}
           image={img}
           alt="green iguana"

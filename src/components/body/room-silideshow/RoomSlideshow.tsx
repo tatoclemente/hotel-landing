@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import './room-styles.css';
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard, FreeMode } from 'swiper/modules';
+import { Autoplay,Navigation, Pagination, Mousewheel, Keyboard, FreeMode } from 'swiper/modules';
 import { Room } from '../../../interfaces/types';
 import RoomCard from './RoomCard';
 import { useEffect, useState } from 'react';
@@ -49,10 +49,15 @@ export const RoomSlideshow = ({rooms}: Props) => {
       <Swiper
         cssMode={true}
         navigation={showNavigation}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+        }}
+        
         freeMode={true}
         mousewheel={true}
         keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard, FreeMode]}
+        modules={[Autoplay,Navigation, Pagination, Mousewheel, Keyboard, FreeMode]}
         className="mySwiperRoom"
       >
         {
