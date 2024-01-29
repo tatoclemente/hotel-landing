@@ -107,6 +107,13 @@
   .menu-link {
     display: none
   }
+  .about {
+    width: 300px;
+  }
+  
+  .menu-link {
+    display: none;
+  }
 
   .bottom-footer {
     flex-direction: column;
