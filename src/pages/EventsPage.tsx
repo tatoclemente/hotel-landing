@@ -1,14 +1,27 @@
 import { Container } from "@mui/material";
+import { RoomSlideshow, SlideshowEvents } from "../components";
+
+import { offerRooms } from '../utils/data';
+
+import { events } from '../utils/data'
+import { GridCards } from '../components/body/services/GridCards';
 
 
 export default function EventsPage() {
   return (
-    <Container
-      id='eventos'
-      maxWidth="lg"
-      sx={{ backgroundColor: "lightgreen", minHeight: "100vh" }}
-    >
-      <h1>Eventos</h1>
-    </Container>
+    <div id='eventos' style={{ width: '100vw', paddingTop: '100px'}}>
+      <RoomSlideshow rooms={offerRooms} />
+      <Container
+        maxWidth="lg"
+        sx={{ position: 'relative' }}
+      >
+
+        <SlideshowEvents events={events} subtitle="Eventos" />
+
+      </Container>
+
+      
+
+    </div>
   );
 }

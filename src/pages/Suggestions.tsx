@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
-
+import { Slideshow, Title } from "../components";
+import { suggestions } from '../utils/data'
 
 
 export default function SuggestionsPage() {
@@ -7,8 +8,13 @@ export default function SuggestionsPage() {
     <Container
       id='menu' 
       maxWidth='lg' 
-      sx={{ backgroundColor: 'lightblue', minHeight: '100vh'}}>
-      <h1>Menu</h1>
+      sx={{ minHeight: '100vh', paddingTop: '100px'}}>
+      <Title label={'Tus recomendaciones'} />
+      {/* Almurzos */}
+      <Slideshow lunch={suggestions.lunch} subtitle="Almuerzos" />
+      <Slideshow lunch={suggestions.breackfastsAndDinners} subtitle="Desayunos y Cenas"/>
+      <Slideshow lunch={suggestions.desserts} subtitle="Postres" />
+      <Slideshow lunch={suggestions.drinks} subtitle="Bebidas" />
     </Container>
   );
 }

@@ -1,13 +1,15 @@
 import { Container } from "@mui/material";
+import { GridCards } from "../components";
 
 export default function ServicesPage() {
   return (
     <Container
       id='servicios'
       maxWidth="lg"
-      sx={{ backgroundColor: "lightcoral", minHeight: "100vh" }}
+      sx={{ display: 'flex', justifyContent: 'center', padding: '10rem 0' }}
     >
-      <h1>Servicios</h1>
+
+      <GridCards />
     </Container>
   );
 }

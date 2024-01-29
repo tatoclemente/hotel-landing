@@ -11,7 +11,7 @@ export const offerRooms = [
   },
   {
     roomName: 'Doble',
-    img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404749/hotel-landing/drinks/mojito_dnppjf.jpg',
+    img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706407003/hotel-landing/room2_a5r4ux.jpg',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.'
   },
   {
@@ -48,7 +48,7 @@ export const services = [
     img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404778/hotel-landing/services/gimnasio_rgphfv.jpg'
   },
   {
-    nsme: 'Juegos',
+    name: 'Juegos',
     img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404774/hotel-landing/services/juegos_fjrxi0.jpg'
   },
   {
@@ -61,7 +61,7 @@ export const services = [
 export const events = [
   {
     name: 'Concierto',
-    img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404773/hotel-landing/services/transporte_yo0khg.jpg',
+    img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404760/hotel-landing/events/concierto_abqzhk.jpg',
     date: '04-02-2024',
     time: '19:00',
   },
@@ -95,9 +95,39 @@ export const suggestions = {
       name: 'Lasagna',
       img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404681/hotel-landing/meals/lasagna_z3lzng.jpg',
       price: 55
+    },
+    {
+      name: 'Salad',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404682/hotel-landing/meals/salad_epgvv2.jpg',
+      price: 45
+    },
+    {
+      name: ' Pork Shoulder',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404682/hotel-landing/meals/pork-shoulder_syngpw.jpg',
+      price: 50
+    },
+    {
+      name: 'Lasagna',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404681/hotel-landing/meals/lasagna_z3lzng.jpg',
+      price: 55
     }
   ],
   breackfastsAndDinners: [
+    {
+      name: 'Omelette',
+      img:'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404807/hotel-landing/dinner-breackfasts/omelette-toast_q0t457.jpg',
+      price: 30
+    },
+    {
+      name: 'Carne al horno',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404806/hotel-landing/dinner-breackfasts/meat-potatoes_j9potr.jpg',
+      price: 50
+    },
+    {
+      name: 'Sandwich',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404805/hotel-landing/dinner-breackfasts/sandwich_dhgqf8.jpg',
+      price: 35
+    },
     {
       name: 'Omelette',
       img:'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404807/hotel-landing/dinner-breackfasts/omelette-toast_q0t457.jpg',
@@ -129,9 +159,39 @@ export const suggestions = {
       name: 'Brownie con helado',
       img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706406411/hotel-landing/desserts/brownie-ice_ivpo5f.jpg',
       price: 30
+    },
+    {
+      name: 'Frutas con crema',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706406410/hotel-landing/desserts/fruits-dessert_td1la6.jpg',
+      price: 25
+    },
+    {
+      name: 'Panqueques de frutilla',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706406412/hotel-landing/desserts/strawberry-pancakes_zhrhdq.jpg',
+      price: 30
+    },
+    {
+      name: 'Brownie con helado',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706406411/hotel-landing/desserts/brownie-ice_ivpo5f.jpg',
+      price: 30
     }
   ],
   drinks: [
+    {
+      name: 'Wiskey',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404749/hotel-landing/drinks/wiskey_ysjsdg.jpg',
+      price: 35
+    },
+    {
+      name: 'Sangría',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404749/hotel-landing/drinks/sangria_qvkiav.jpg',
+      price: 30
+    },
+    {
+      name: 'Mojito',
+      img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404749/hotel-landing/drinks/mojito_dnppjf.jpg',
+      price: 35
+    },
     {
       name: 'Wiskey',
       img: 'https://res.cloudinary.com/dt2o36ezn/image/upload/v1706404749/hotel-landing/drinks/wiskey_ysjsdg.jpg',

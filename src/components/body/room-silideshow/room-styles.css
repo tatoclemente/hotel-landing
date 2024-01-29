@@ -1,0 +1,62 @@
+
+.swiper {
+  max-width: 900px;
+  height: 320px;
+  padding: 0 1rem
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 210px;
+  height: 100%;
+  object-fit: cover;
+  background-color: #fff
+}
+
+.mySwiperRoom{ 
+  height: 450px
+}
+
+
+.card-room {
+  max-width: 80%; 
+  display: flex;
+  gap: 1rem; 
+  background-color: transparent; 
+  box-shadow: none 
+}
+.room-slide-container {
+  width: 100vw; 
+  margin: 4rem auto; 
+  height: 450px; 
+  background-color: #AE9672;
+  display: flex; 
+  alignItems: center;
+  justify-content: center;
+}
+
+@media (max-width: 970px) {
+  .card-room {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .room-slide-container {
+    height: auto;
+  }
+
+  .mySwiperRoom{ 
+    height: 600px;
+  }
+}
