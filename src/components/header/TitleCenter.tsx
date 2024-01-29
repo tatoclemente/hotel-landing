@@ -2,6 +2,8 @@ import { Container } from "@mui/material"
 import { Button } from "@mui/material"
 
 
+import './title-center.css'
+
 
 export const TitleCenter = () => {
   return (
@@ -16,7 +18,7 @@ export const TitleCenter = () => {
       justifyContent: 'center',
       alignItems: 'center',
     }}>
-      <h1 id='title-header'>Hotel Marriott</h1>
+      <h1 className='title-header'>Hotel Marriott</h1>
       <Button 
         href="" 
         variant='contained'

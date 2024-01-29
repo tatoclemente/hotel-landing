@@ -34,6 +34,7 @@ export const Navigation = () => {
   };
 
   const handleClickMenu = (id: string) => {
+    
     setAnchorElNav(null);
     
     setPatname(id)

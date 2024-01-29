@@ -16,7 +16,8 @@
 .data-content {
   position: absolute !important;
   top: 40%;
-  left: 26%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
