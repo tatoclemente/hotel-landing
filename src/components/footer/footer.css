@@ -51,10 +51,6 @@
   flex-direction: column;
 }
 
-.menu-links h3 {
-  text-align: center;
-  color: #fff
-}
 .rigth-content {
   margin-left: 2rem;
   display: flex;
@@ -74,7 +70,13 @@
   display: flex;
   align-items: center; 
   justify-content: center;
-  gap: 2rem
+  gap: 2rem;
+}
+
+.all-reserved {
+  color: #fff; 
+  font-size: 1.3rem; 
+  font-weight: 600
 }
 
 @media (max-width: 970px) {
@@ -85,11 +87,42 @@
     justify-content: center;
   }
 
+  .logo {
+    transform: translateY(3rem)
+  }
+
   .divider {
     transform: rotate(90deg);
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .about {
+    width: 300px;
+    font-family: 'Jost';
+    color: #fff;
+    transform: translateY(-3rem)
+  }
+
+  .menu-link {
+    display: none
   }
 
   .bottom-footer {
     flex-direction: column;
+    margin: 0 auto
+  }
+
+  .rigth-content {
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .bottom-footer {
+    gap: 1rem;
+  }
+
+  .all-reserved {
+    font-size: 1.2rem
   }
 }

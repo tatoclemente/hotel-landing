@@ -6,7 +6,7 @@ import SuggestionsPage from "./pages/Suggestions";
 
 function App() {
   return (
-    <main id="home">
+    <main id="home" style={{maxWidth:'100vw'}}>
       <Header />
 
       <SuggestionsPage />

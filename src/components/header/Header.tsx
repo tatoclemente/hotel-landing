@@ -29,7 +29,7 @@ const ImageBackdrop = styled('span')(({ theme }) => ({
 
 export const Header = () => {
   return (
-    <header style={{position: 'relative',  height: '376px',}}>
+    <header style={{position: 'relative',  height: '376px', maxWidth: '100%'}}>
       <ImageBackground src={imgHotel} alt="hotel-ph" />
       <ImageBackdrop />
       <Navigation />

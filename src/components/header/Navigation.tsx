@@ -66,8 +66,8 @@ export const Navigation = () => {
         width: '100vw',
       }}
     >
-      <Container maxWidth="lg">
-        <Toolbar disableGutters>
+      <Container>
+        <Toolbar>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: 'white' }} />
           <Typography
             variant="h6"
