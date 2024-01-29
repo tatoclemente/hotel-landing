@@ -9,7 +9,7 @@ import { GridCards } from '../components/body/services/GridCards';
 
 export default function EventsPage() {
   return (
-    <div id='eventos' style={{ width: '100vw', paddingTop: '100px'}}>
+    <div id='eventos' style={{ width: '100%', paddingTop: '100px'}}>
       <RoomSlideshow rooms={offerRooms} />
       <Container
         maxWidth="lg"

@@ -39,3 +39,13 @@
     font-size: 1.8rem
   }
 }
+
+body {
+  font-family: 'Jost';
+  widht: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}

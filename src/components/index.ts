@@ -29,5 +29,3 @@ export * from './body/room-silideshow/RoomSlideshow'
 
 // Footer cmponents
 export * from './footer/Footer'
-export * from './footer/BottomBar'
-export * from './footer/Social'

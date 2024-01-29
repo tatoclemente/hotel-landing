@@ -15,7 +15,7 @@ interface Props {
 
 export const ServicesCard = ({ img, name }: Props) => {
   return (
-    <Card sx={{ width: 190, height: '273px', borderRadius: '15px', boxShadow: '0 5px 5px rgba(0,0,0,.2)' }}>
+    <Card sx={{ width: 170, height: 270, borderRadius: '15px', boxShadow: '0 5px 5px rgba(0,0,0,.2)' }}>
       <CardActionArea>
         <CardMedia
           component="img"
