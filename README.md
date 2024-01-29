@@ -2,5 +2,5 @@
 - [x] Definir las fuentes para el proyecto
 - [x] Definir las caarpetas y los components
 
-- [x] Crear los la data en duro
-- [x] Maquetar los coponentes
+- [x] Crear la data en duro
+- [x] Maquetar los componentes
