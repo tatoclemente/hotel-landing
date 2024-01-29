@@ -178,9 +178,8 @@
 
   .termsAndConditions {
     flex-direction: column;
-    widht: 100%;
-    align-items: center;
-    justify-conetnt: center;
-    text-align: center;
+    width: 100%;
+    margin-right: 9%;
+    text-align: center; 
   }
 }
