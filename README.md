@@ -3,4 +3,4 @@
 - [x] Definir las caarpetas y los components
 
 - [x] Crear los la data en duro
-- [] Maquetar los coponentes
+- [x] Maquetar los coponentes
