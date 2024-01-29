@@ -62,6 +62,11 @@ export default function RoomCard({ roomName, img, description }: Props) {
             width: '300px',
             backgroundColor: "#fff",
             color: '#AE9672',
+            transition: '0.4s ease-in-out',
+            '&:hover': {
+              backgroundColor: '#936d46',
+              color: '#fff',
+            }
           }} variant="contained" size="small">Hacer Reservación</Button>
         </CardActions>
       </Box>

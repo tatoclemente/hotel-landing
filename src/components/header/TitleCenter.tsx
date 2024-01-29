@@ -28,6 +28,11 @@ export const TitleCenter = () => {
           textTransform: 'capitalize',
           width: '100%',
           fontSize: '1.2rem',
+          transition: '0.4s ease-in-out',
+          '&:hover': {
+            backgroundColor: '#AE9672',
+            color: '#fff',
+          }
         }}
       >Hacer reserva</Button>
     </Container>

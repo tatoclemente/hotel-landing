@@ -117,8 +117,8 @@ export const Navigation = () => {
             >
               {pages.map((page) => (
 
-                <MenuItem  key={page.title} onClick={() => handleClickMenu(page.route)}>
-                  <Typography textAlign="center" sx={{textTransform: 'lowercase'}}>{page.title}</Typography>
+                <MenuItem key={page.title} onClick={() => handleClickMenu(page.route)}>
+                  <Typography id='menu-item' textAlign="center" sx={{textTransform: 'lowercase'}}>{page.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
