@@ -77,7 +77,7 @@ export const Footer = () => {
    
       </Container>
       <div className="bottom-footer">
-        <Typography variant="subtitle1" align="center" style={{color: '#fff', fontSize: '1.3rem', fontWeight: '600'}}>
+        <Typography variant="subtitle1" align="center" style={{color: '#fff', fontSize: '1.2rem', fontWeight: '600'}}>
           Todos los derechos reservados © 2024
         </Typography>
         <Typography variant="subtitle1" align="center" style={{color: '#fff'}}>
