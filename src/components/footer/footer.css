@@ -51,10 +51,7 @@
   flex-direction: column;
 }
 
-.menu-links h3 {
-  text-align: center;
-  color: #fff
-}
+
 .rigth-content {
   margin-left: 2rem;
   display: flex;
@@ -90,6 +87,10 @@
   }
   .about {
     width: 300px;
+  }
+  
+  .menu-link {
+    display: none;
   }
 
   .bottom-footer {
