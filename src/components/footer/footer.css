@@ -88,6 +88,9 @@
   .divider {
     transform: rotate(90deg);
   }
+  .about {
+    width: 300px;
+  }
 
   .bottom-footer {
     flex-direction: column;
